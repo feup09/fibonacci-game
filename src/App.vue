@@ -1,16 +1,13 @@
 <template>
   <div class="screen">
-
     <div class="board">
       <div class="game-name">EnergyWorx Fibonacci</div>
       <div class="game-button">
         <button @click="resetScore(); restartGame()" v-if="!restart">Restart</button>
       </div>
       <div class="game-score" :class="gameScoreClass">Score: {{ score }}</div>
-
       <div class="game-explanation">Complete a sequence of 5 Fibonacci numbers in a row to earn points
       </div>
-
     </div>
     <FibonacciGrid></FibonacciGrid>
   </div>
